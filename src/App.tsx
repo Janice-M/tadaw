@@ -9,9 +9,13 @@ const App: React.FC =() => {
 
 
   const handleChange = (event:ChangeEvent<HTMLInputElement>) =>{
-    if(event.target.name == 'task')[
+    if(event.target.name == 'task'){
       setTask(event.target.value);
-    ]
+    } else{
+      setDeadLine(Number(event.target.value));
+    }
+      
+    
   }
 
 
