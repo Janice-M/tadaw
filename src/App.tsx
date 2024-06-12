@@ -2,6 +2,9 @@ import React, {useState} from "react";
 
 const App: React.FC =() => {
 
+  const[task, setTask] = useState<string>("");
+  const[deadLine, setDeadLine] = 
+
 
   return(
     <div className="App">
