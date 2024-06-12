@@ -81,7 +81,7 @@ body{
   height: 100%;
   font-size: 18px;
   border-right: none;
-  background-color: tomato;
+  background-color: rgb(172, 65, 127);
 }
 
 .task button{
