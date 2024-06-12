@@ -1,6 +1,6 @@
-import React,{ FC,ChangeEvent, useState } from 'react'
+import React ,{ FC,ChangeEvent, useState } from 'react'
 import './App.css';
-import TodoTask from './Components/TodoTask';
+import TodoTask from '/home/user/Documents/stdy/React-Todo/src/components/TodoTask.tsx';
 import { ITask } from './Interfaces';
 
 const App:FC =() => {
@@ -22,7 +22,7 @@ const App:FC =() => {
       taskName:task,
       deadline:deadLine
     };
-    setTodo([...todo, newTask])
+    setTodo([... todo, newTask])
     setTask("");
     setDeadLine(0);
   }
@@ -44,7 +44,7 @@ const App:FC =() => {
            onChange={handleChange} />
 
           <input type="number" 
-          placeholder='DeadLine (in days)' 
+          placeholder="DeadLine (in days)"
           name='deadline'
           value={deadLine}
           onChange={handleChange} />
