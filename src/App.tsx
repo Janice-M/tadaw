@@ -1,11 +1,14 @@
-import React, {useState} from "react";
+import React, {useState, ChangeEvent} from "react";
+import { ITask } from "./Interfaces";
 
 const App: React.FC =() => {
 
   const[task, setTask] = useState<string>("");
   const[deadLine, setDeadLine] = useState<number>(0)
+  const [todo, setTodo] = useState<ITask[]>([]);
 
 
+  const handleChange = 
   return(
     <div className="App">
       <div className="header">
