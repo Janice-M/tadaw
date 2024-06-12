@@ -8,7 +8,13 @@ const App: React.FC =() => {
   const [todo, setTodo] = useState<ITask[]>([]);
 
 
-  const handleChange = 
+  const handleChange = (event:ChangeEvent<HTMLInputElement>) =>{
+    if(event.target.name == 'task')[
+      setTask(event.target.value);
+    ]
+  }
+
+
   return(
     <div className="App">
       <div className="header">
