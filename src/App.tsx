@@ -18,6 +18,16 @@ const App: React.FC =() => {
     
   }
 
+  const addTask =() => {
+    const newTask ={
+      taskName:task,
+      deadLine:deadLine
+    }
+    setTodo([... todo, newTask]);
+    setTask("");
+    setDeadLine(0);
+  }
+
 
   return(
     <div className="App">
@@ -26,7 +36,7 @@ const App: React.FC =() => {
           <input type="text" name="task" placeholder="Add a Tadaw" value={task} onChange={handleChange}/>
           <input type="number" name="deadline" placeholder = "Deadline (in Days)"value={deadLine} onChange={handleChange}/>
         </div>
-        <button>Add Tadaw </button>
+        <button onClick={addTask} >Add Tadaw </button>
       </div>
       <div className="todoList"></div>
     </div>
